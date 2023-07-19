@@ -1,0 +1,54 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 0) and (max-width: #{map-get($grid-breakpoints, desktop) - 1}) {
+    .mobile-12 {
+        flex: calc(100% / 12 * 12);
+        width: 100%;
+    }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, desktop)}) {
+    .tablet-8 {
+        width: calc(100% / 12 * 8);
+        padding: 0 var(--container-padding-x);
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+
+    .tablet-4 {
+        width: calc(100% / 12 * 4);
+        padding: 0 var(--container-padding-x);
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+
+    .tablet-6 {
+        width: calc(100% / 12 * 6);
+        padding: 0 var(--container-padding-x);
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+}

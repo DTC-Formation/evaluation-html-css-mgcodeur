@@ -1,0 +1,25 @@
+.banner {
+    .mobile {
+        max-height: 50vh;
+        object-fit: cover;
+    }
+    @media (max-width: #{map-get($grid-breakpoints, desktop) - 1}) {
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, desktop)}) {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+    }
+}

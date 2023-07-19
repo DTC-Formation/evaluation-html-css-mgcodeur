@@ -1,0 +1,35 @@
+@import 'app/global/variables';
+
+@import 'app/global';
+
+/* layout, font, box*/
+@import 'app/global/background';
+@import 'app/global/box';
+@import 'app/global/container';
+@import 'app/global/font';
+@import 'app/global/grid';
+@import 'app/global/layout';
+@import 'app/global/margin_and_padding';
+@import 'app/global/text';
+
+/* components > elements */
+@import 'app/components/elements/button';
+@import 'app/components/elements/title';
+
+/* 
+components > shared
+1. components > shared > mobile-drawer
+2. components > shared > nav
+*/
+@import 'app/components/shared/mobile-drawer';
+@import 'app/components/shared/navbar';
+
+/*
+section > home 
+1. section > home > banner
+2. section > home > new-articles
+3. section > home > posts
+*/
+@import 'app/sections/home/banner';
+@import 'app/sections/home/new-articles';
+@import 'app/sections/home/posts';

@@ -1,0 +1,41 @@
+:root {
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* elements */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: $font-family;
+    @each $color, $value in $colors {
+        --color-#{$color}: #{$value};
+    }
+    --container-padding-x: #{$container-padding-x};
+
+    @each $weight in $inter-font-weight {
+        --font-weight-#{$weight}: #{$weight};
+    }
+    line-height: 1.5;
+    color: var(--color-dark-grayish-blue);
+    letter-spacing: 0.031rem;
+    font-weight: 400;
+}

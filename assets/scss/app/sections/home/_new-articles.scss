@@ -1,0 +1,19 @@
+.new-articles {
+
+    .link {
+        color: var(--color-off-white);
+        text-decoration: none;
+        display: flex;
+    }
+
+    .link:hover {
+        color: var(--color-secondary);
+    }
+
+    hr {
+        position: relative;
+        border: none;
+        height: 0.0625rem;
+        background: var(--color-dark-grayish-blue);
+    }
+}

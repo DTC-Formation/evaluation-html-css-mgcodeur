@@ -2,59 +2,215 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar w-100">
+      <div class="container">
+        <div class="d-flex justify-content-between w-100 align-items-center">
+          <!-- app logo -->
+          <a href="#" class="logo">
+            <img src="assets/images/logo.svg" alt="Frontend Mentor logo">
+          </a>
+          <!--/ app logo -->
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+          <!-- nav menu -->
+          <ul class="nav-menu d-flex m-0 p-0 align-items-center d-desktop-flex d-mobile-none">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">New</a>
+            </li>
+            <li>
+              <a href="#">Trending</a>
+            </li>
+            <li>
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+          <!--/ nav menu -->
 
-  The Bright Future of Web 3.0?
+          <a href="#" class="d-none d-mobile-block d-desktop-none button-open-menu">
+            <img src="assets/images/icon-menu.svg" alt="hambuger menu" class="menu-icon">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--/ navbar -->
+  </header>
+  <!--/ header -->
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  <!-- mobile drawer -->
+  <div class="mobile-drawer px-4.5 pt-4">
+    <div class="d-flex justify-content-end">
+      <a href="#" class="button-close-menu">
+        <img src="assets/images/icon-menu-close.svg" alt="">
+      </a>
+    </div>
 
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <ul class="mt-5">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">New</a>
+      </li>
+      <li>
+        <a href="#">Trending</a>
+      </li>
+      <li>
+        <a href="#">Categories</a>
+      </li>
+    </ul>
   </div>
+  <!--/ mobile drawer -->
+
+  <!-- main -->
+  <main>
+    <div class="container">
+      <div class="grid">
+        <div class="mobile-12 tablet-8 mb-mobile-5">
+          <!-- banner -->
+          <div class="banner">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="banner image" class="w-100 desktop">
+            <img src="assets/images/image-web-3-mobile.jpg" alt="banner image" class="w-100 mobile">
+          </div>
+          <!--/ banner -->
+
+          <!-- highlight -->
+          <div class="grid pt-4">
+            <div class="mobile-12 tablet-6">
+              <h2 class="text-capitalize title title-1">
+                The bright futur of web 3.0
+              </h2>
+            </div>
+            <div class="mobile-12 tablet-6">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <p class="my-mobile-4">
+                  We dive into the next evolution of the web that claims to put the power of the plateforms back into the hands of the people. 
+                  But it really fulfilling its promise?
+                </p>
+
+                <div class="d-flex">
+                  <a href="#" class="button button-primary text-uppercase">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ highlight -->
+        </div>
+
+        <!-- new articles -->
+        <div class="mobile-12 tablet-4 new-articles">
+          <div class="bg-very-dark-blue text-white p-4 h-100">
+            <h3 class="text-secondary title title-2 mb-4">New</h3>
+
+            <!-- article -->
+            <div class="text-grayish-blue font-weight-400 my-4.5">
+              <a href="#" class="link title title-4 mb-3">Hydrogen VS Electric Cars</a>
+              <p>
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <!--/ article -->
+
+            <hr>
+
+            <!-- article -->
+            <div class="text-grayish-blue font-weight-400 my-4.5">
+              <a href="#" class="link title title-4 mb-3">The Downsides of AI Artistry</a>
+              <p>
+                What are the possible adverse effects of on-demand AI image generation
+              </p>
+            </div>
+            <!--/ article -->
+
+            <hr>
+
+            <!-- article -->
+            <div class="text-grayish-blue font-weight-400 my-4.5">
+              <a href="#" class="link title title-4 mb-3">Is VC Funding Drying Up?</a>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at what that means
+              </p>
+            </div>
+            <!--/ article -->
+          </div>
+        </div>
+        <!-- /new articles -->
+      </div>
+
+      <div class="grid mt-5">
+        <!-- article -->
+        <div class="mobile-12 tablet-4 posts mb-4">
+          <div class="d-flex">
+            <div class="mr-4">
+              <img src="assets/images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+              <span class="number title title-3 text-dark-grayish-blue">01</span>
+              <h4 class="title title-5">Reviving Retro PCs</h4>
+              <p>
+                What happens when old PCs 
+                are given modern upgrades?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ article -->
+
+        <!-- article -->
+        <div class="mobile-12 tablet-4 posts mb-4">
+          <div class="d-flex">
+            <div class="mr-4">
+              <img src="assets/images/image-top-laptops.jpg" alt="">
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+              <span class="number title title-3 text-dark-grayish-blue">02</span>
+              <h4 class="title title-5">Top 10 Laptops of 2022</h4>
+              <p>
+                Our best picks for various
+                needs and budgets.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ article -->
+        
+        <!-- article -->
+        <div class="mobile-12 tablet-4 posts mb-4">
+          <div class="d-flex">
+            <div class="mr-4">
+              <img src="assets/images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+              <span class="number title title-3 text-dark-grayish-blue">03</span>
+              <h4 class="title title-5">The growth of Gaming</h4>
+              <p>
+                How the pandemic has sparked
+                fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ article -->
+      </div>
+    </div>
+  </main>
+  <!-- /main -->
+
+  <script src="assets/js/DrawerToggler.js"></script>
+  <script>
+    DrawerToggler.init();
+  </script>
 </body>
 </html>

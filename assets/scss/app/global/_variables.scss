@@ -1,0 +1,63 @@
+
+/* colors */
+$soft-orange: hsl(36, 37%, 20%)!default;
+$orange: #ebad56!default;
+$soft-red: hsl(5, 85%, 63%)!default;
+$white: hsl(0, 0%, 100%)!default;
+
+$off-white: hsl(36, 100%, 99%)!default;
+$grayish-blue: hsl(233, 8%, 79%)!default;
+$dark-grayish-blue: hsl(236, 13%, 42%)!default;
+$very-dark-blue: hsl(240, 100%, 5%)!default;
+
+$primary-color: $soft-red!default;
+$secondary-color: $orange!default;
+
+$colors: (
+    'primary': $primary-color,
+    'white': $white,
+    'secondary': $secondary-color,
+    'off-white': $off-white,
+    'grayish-blue': $grayish-blue,
+    'dark-grayish-blue': $dark-grayish-blue,
+    'very-dark-blue': $very-dark-blue,
+    'soft-orange': $soft-orange
+)!default;
+
+/* font family */
+$font-family: Inter, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/* font weight */
+$inter-font-weight: (
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+)!default;
+
+/* layouts */
+$container-max-widths: (
+    xs: 375px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+)!default;
+
+/* grid */
+$grid-breakpoints: (
+    mobile: 375px,
+    desktop: 992px
+)!default;
+
+$grid-space-width: 1.5rem !default;
+$container-padding-x: $grid-space-width * .5 !default;
+
+/* cols */
+$grid-columns: 12 !default;

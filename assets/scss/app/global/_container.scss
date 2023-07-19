@@ -1,0 +1,35 @@
+@mixin make-container() {
+    width: 100%;
+    padding-right: var(--container-padding-x);
+    padding-left: var(--container-padding-x);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin make-container-max-widths($max-width: $container-max-widths) {
+    max-width: $max-width;
+}
+
+.container {
+    @include make-container();
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+    @if $breakpoint == 'xs' {
+        @media (max-width: #{map-get($container-max-widths, $breakpoint)}) {
+            .container {
+                @include make-container-max-widths(100%);
+            }
+        }
+    }
+    @else {
+        @media (min-width: #{map-get($container-max-widths, $breakpoint)}) {
+            .container {
+                @include make-container-max-widths(map-get($container-max-widths, $breakpoint));
+            }
+        }
+    }
+}

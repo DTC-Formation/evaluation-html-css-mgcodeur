@@ -1,0 +1,22 @@
+// button
+
+.button {
+    text-decoration: none;
+    border: none;
+    padding: .9rem 2.5rem;
+    width: auto;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+}
+
+@each $color, $value in $colors {
+  .button-#{$color} {
+    background-color: var(--color-#{$color});
+    color: var(--color-white);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-very-dark-blue);
+    }
+  }
+}

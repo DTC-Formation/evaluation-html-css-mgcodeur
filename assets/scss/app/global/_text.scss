@@ -1,0 +1,13 @@
+@each $color, $value in $colors {
+    .text-#{$color} {
+        color: var(--color-#{$color})!important;
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

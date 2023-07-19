@@ -1,0 +1,5 @@
+@each $weight in $inter-font-weight {
+    .font-weight-#{$weight} {
+        font-weight: var(--font-weight-#{$weight})!important;
+    }
+}

@@ -19,7 +19,7 @@ Here is the design of the challenge:
 
 ![desktop](./design/desktop-preview.jpg) 
 
-## Screenshots Result 📷
+## Screenshots (Result of my work) 📸
 
 ![desktop](./assets/images/../readme/desktop%201.png)
 

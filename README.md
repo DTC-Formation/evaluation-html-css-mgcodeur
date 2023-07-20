@@ -3,10 +3,6 @@
 
 Thanks for checking out this front-end coding challenge.
 
-Here is the design of the challenge:
-
-![desktop](./design/desktop-preview.jpg)
-
 ### You can see and try demo here: https://frontend-master.kintana-technology.com/
 
 ### made with only
@@ -17,9 +13,13 @@ Here is the design of the challenge:
 
 </br>
 
-by [Mgcodeur](https://github.com/mgcodeur). 
+by [Mgcodeur](https://github.com/mgcodeur).
 
-## Screenshots
+Here is the design of the challenge:
+
+![desktop](./design/desktop-preview.jpg) 
+
+## Screenshots Result 📷
 
 ![desktop](./assets/images/../readme/desktop%201.png)
 

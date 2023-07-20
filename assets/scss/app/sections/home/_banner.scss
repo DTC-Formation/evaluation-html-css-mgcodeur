@@ -3,6 +3,12 @@
         max-height: 50vh;
         object-fit: cover;
     }
+    @media (max-width: #{map-get($grid-breakpoints, tablet) - 1}) {
+        .mobile {
+            max-height: 33vh;
+        }
+    }
+
     @media (max-width: #{map-get($grid-breakpoints, desktop) - 1}) {
         .mobile {
             display: block;

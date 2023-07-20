@@ -3,7 +3,7 @@
     color: var(--color-very-dark-blue);
 }
 .title-1 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 3.8rem;
     letter-spacing: 1px;
 }
@@ -29,4 +29,10 @@
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 1px;
+}
+
+@media (max-width: #{map-get($grid-breakpoints, tablet) - 1}) {
+    .title-1 {
+        font-size: 3.3rem;
+    }
 }

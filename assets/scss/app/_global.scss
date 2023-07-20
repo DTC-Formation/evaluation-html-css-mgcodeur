@@ -39,3 +39,9 @@ body {
     letter-spacing: 0.031rem;
     font-weight: 400;
 }
+
+@media (max-width: #{map-get($grid-breakpoints, tablet) - 1}) {
+    :root {
+        font-size: 14px;
+    }
+}
